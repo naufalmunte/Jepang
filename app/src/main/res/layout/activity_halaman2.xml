@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkg_color"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Title Section -->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/breeserifregular"
+        android:text="Take your time and discover various sights in"
+        android:textColor="@android:color/black"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/highlightedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Japan"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#007AFF"
+    android:fontFamily="@font/breeserifregular"
+    android:layout_marginBottom="24dp" />
+
+    <!-- Subtitle -->
+
+    <!-- Horizontal Layout for Destination Images and Text -->
+
+    <TextView
+        android:id="@+id/destinationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/breeserifregular"
+        android:text="Destination"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Destination 1: Osaka -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageOsaka"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="Osaka"
+                android:src="@drawable/os" />
+
+            <TextView
+                android:id="@+id/textOsaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Osaka"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Destination 2: Asakusa -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageAsakusa"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="Asakusa"
+                android:src="@drawable/ak" />
+
+            <TextView
+                android:id="@+id/textAsakusa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Asakusa"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Destination 3: Honshu -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageHonshu"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="Honshu"
+                android:src="@drawable/hs" />
+
+            <TextView
+                android:id="@+id/textHonshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Honshu"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Destination 4: Hakone -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageHakone"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="Hakone"
+                android:src="@drawable/hk" />
+
+            <TextView
+                android:id="@+id/textHakone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Hakone"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        />
+    
+</LinearLayout>
